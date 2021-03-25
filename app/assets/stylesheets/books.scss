@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 800;
+}
+body {
+  margin: 33px;
+}
+
+table {
+  display: table;
+  table-layout: fixed;
+  font-size: 13px;
+  border-collapse: separate;
+  border-spacing: 8px;
+}
+
+th {
+  font-weight: bolder;
+  position: relative;
+}
+.title {
+  width: 190px;
+}
+.body {
+  width: 400px;
+}
+
+.index-field {
+  margin-top: 17px;
+}
+.notice-d {
+  color:green;
+  margin: 30px 30px;
+}
+
+// show
+.book-title, .book-body{
+  display: flex;
+  font-size: 13px;
+  margin: 30px 30px;
+}
+.notice {
+  color:green;
+  margin: 0 30px;
+}
+
+// edit
+.edid-head {
+  font-weight:900px;
+  margin-bottom: 20px;
+}
+.edit-field {
+  margin: 10px 0;
+}
