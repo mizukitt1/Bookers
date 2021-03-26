@@ -1,3 +1,10 @@
+<% if @book.errors.any? %>
+  <h2>error</h2>
+  <% @book.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
 <h1 class="edid-head">Editing Book</h1>
 
 <%= form_with model:@book,local:true do |f| %>
@@ -14,5 +21,5 @@
   </div>
 <% end %>
 
-<span><%= link_to 'show', book_path(@book) %></span>
-<a class="btn" href="/books">Back</a>
+<%= link_to 'show', book_path(@book) %>
+<%= link_to "Back", books_path %>
